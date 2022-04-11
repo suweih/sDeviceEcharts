@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In-数据看板</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2670396_gap9q9vggt.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.1/echarts.min.js"></script>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/china.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        中山市 - 设备管理实时数据
+      </div>
+      <div class="content">
+        <!-- 第1列 -->
+        <div class="column">
+          <div class="panel overviews">
+            <div class="inner first-views">
+              <div class="item">
+                <p>
+                  2,190
+                </p>
+                <span><i class="mr4px iconfont blue icon-1box"></i>设备总数</span>
+              </div>
+              <div class="item">
+                <p>
+                  190
+                </p>
+                <span><i class="mr4px iconfont green icon-1box"></i>季度新增</span>
+              </div>
+              <div class="item">
+                <p>
+                  2,188
+                </p>
+                <span><i class="mr4px iconfont origin icon-1box"></i>运营设备</span>
+              </div>
+              <div class="item">
+                <p>
+                  366
+                </p>
+                <span><i class="mr4px iconfont red icon-1box"></i>异常设备</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel monitor">
+            <div class="inner">
+              <div class="tabs">
+                <a class="active" href="javascript:void(0);">故障设备监控</a>
+                <a href="javascript:void(0);">异常设备监控</a>
+              </div>
+              <!-- 第一部分 -->
+              <div class="content-wrap">
+                <div class="title">
+                  <span>故障时间</span>
+                  <span>故障地址</span>
+                  <span>故障代码</span>
+                </div>
+                <div class="carousel">
+                  <ul>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21101</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21102</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21103</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21104</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21105</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21106</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21107</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21108</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21109</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211010</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211011</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211012</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211013</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211014</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211015</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21101</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21102</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21103</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21104</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21105</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21106</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21107</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21108</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>21109</span></li>
+                    <li><span>20220202</span><span>广东省中山市石歧区爱国路爱民街道1号</span><span>211010</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 第二部分 -->
+              <div class="content-wrap" style="display: none;">
+                <div class="title">
+                  <span>异常时间</span>
+                  <span>异常地址</span>
+                  <span>异常代码</span>
+                </div>
+                <div class="carousel">
+                  <ul>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11701</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11702</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11703</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11704</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11705</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11706</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11707</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11708</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11709</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117010</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117011</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117012</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117013</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117014</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117015</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11701</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11702</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11703</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11704</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11705</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11706</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11707</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11708</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>11709</span></li>
+                    <li><span>20220202</span><span>爱民街道1号张三</span><span>117010</span></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="panel point">
+            <div class="inner ">
+              <h3 class="point-title">点位分布图</h3>
+              <div class="echarts">
+                <div class="pie" id="pie"></div>
+                <div class="data">
+                  <div class="item">
+                    <p>320,11</p>
+                    <span><i class="mr4px iconfont green icon-1box"></i>点位分布</span>
+                  </div>
+                  <div class="item">
+                    <p>418</p>
+                    <span><i class="mr4px iconfont red icon-1box"></i>本月新增</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第2列 -->
+        <div class="column">
+          <div class="map">
+            <h3 class="map-title"><i class="fz30 blue mr4px iconfont icon-lifangtilitiduomiantifangkuai2"></i> 设备数据统计</h3>
+            <div class="echarts">
+              <div class="gro" id="gro"></div>
+            </div>
+          </div>
+          <div class="panel user">
+            <div class="inner ">
+              <h3 class="bar-title">全国用户总量统计</h3>
+              <div class="echarts">
+                <div class="bar" id="bar"></div>
+                <div class="data">
+                  <div class="item">
+                    <p>120,685</p>
+                    <span><i class="mr4px iconfont green icon-1box"></i>用户总量</span>
+                  </div>
+                  <div class="item">
+                    <p>218</p>
+                    <span><i class="mr4px iconfont red icon-1box"></i>本月新增</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第3列 -->
+        <div class="column">
+          <div class="panel order">
+            <div class="inner ">
+              <div class="order-head">
+                <a class="active" href="javascript:void(0)">365天</a>
+                <a href="javascript:void(0)">90天</a>
+                <a href="javascript:void(0)">30天</a>
+                <a href="javascript:void(0)">24小时</a>
+              </div>
+              <div class="order-data">
+                <div class="order-item">
+                  <p>301,987</p>
+                  <span><i class="mr4px iconfont green icon-1box"></i>用户总量</span>
+                </div>
+                <div class="order-item">
+                  <p>99834</p>
+                  <span><i class="mr4px iconfont red icon-1box"></i>本月新增</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel sales">
+            <div class="inner ">
+              <h3 class="sales-title">
+                <span>销售额统计</span>
+                <a href="javascript:void(0)">年</a>
+                <a class="active" href="javascript:void(0)">季</a>
+                <a href="javascript:void(0)">月</a>
+                <a href="javascript:void(0)">周</a>
+              </h3>
+              <div class="echarts">
+                <div class="line" id="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hannel-quarter-wrap">
+            <div class="panel hannel">
+              <div class="inner ">
+                <h3 class="hannel-title">渠道分布</h3>
+                <div class="hannel-data">
+                  <div class="hannel-item">
+                    <p>39</p>
+                    <span><i class="iconfont blue icon-local-airport"></i> 机场</span>
+                  </div>
+                  <div class="hannel-item">
+                    <p>28</p>
+                    <span><i class="iconfont green icon-shop-fill"></i> 商场</span>
+                  </div>
+                  <div class="hannel-item">
+                    <p>20</p>
+                    <span><i class="iconfont origin icon-ios-subway"></i> 地铁</span>
+                  </div>
+                  <div class="hannel-item">
+                    <p>13</p>
+                    <span><i class="iconfont red icon-train"></i> 火车站</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel quarter">
+              <div class="inner ">
+                <h3 class="quarter-title">一季度销售进度</h3>
+                <div class="echarts">
+                  <div class="persen" id="persen"></div>
+                </div>
+                <div class="quarter-data">
+                  <div class="quarter-item">
+                    <p>1,321</p>
+                    <span><i class="iconfont green icon-1box"></i> 销售额</span>
+                  </div>
+                  <div class="quarter-item">
+                    <p>131</p>
+                    <span><i class="iconfont red icon-1box"></i> 同比增长</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel hot">
+            <div class="inner ">
+              <div class="hot-wrapper">
+                <div class="all">
+                  <h3>全国热榜</h3>
+                  <div class="data">
+                    <p><i <i class="iconfont icon-cup mr10px red1 fz50"></i><span>养乐多</span></p>
+                    <p><i <i class="iconfont icon-cup mr10px blue1 fz50"></i><span>娃哈哈</span></p>
+                    <p><i <i class="iconfont icon-cup mr10px blue2 fz50"></i><span>怡宝</span></p>
+                  </div>
+                </div>
+                <div class="province">
+                  <div class="province-title">
+                    <h3>全国热榜</h3>
+                    <div>// 近30日 //</div>
+                  </div>
+                  <div class="province-content">
+                    <ul class="province-left">
+                      <li class="active"><span>黄圃</span><b>22,546</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>东凤</span><b>65,598</b><i class="iconfont icon-Down-"></i></li>
+                      <li><span>小榄</span><b>61,123</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>石歧</span><b>26,151</b><i class="iconfont icon-Down-"></i></li>
+                      <li><span>三乡</span><b>16,561</b><i class="iconfont icon-Up-"></i></li>
+                    </ul>
+                    <ul class="province-right">
+                      <li><span>绞肉机</span><b>2,846</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>压力机</span><b>5,898</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>压缩机</span><b>1,823</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>搅拌机</span><b>6,851</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>打孔机</span><b>1,861</b><i class="iconfont icon-Up-"></i></li>
+                      <li><span>计数机</span><b>2,861</b><i class="iconfont icon-Up-"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
